@@ -5,4 +5,13 @@
 
 ---@module 'lazy'
 ---@type LazySpec
-return {}
+return {
+  {
+    'tpope/vim-fugitive',
+    keys = {
+      { '<leader>gg', '<cmd>Git<cr>', desc = '[G]it status' },
+      { '<leader>gb', '<cmd>Git blame<cr>', desc = '[G]it [B]lame' },
+      { '<leader>gl', '<cmd>Git log<cr>', desc = '[G]it [L]og' },
+    },
+  },
+}
